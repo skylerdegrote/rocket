@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="rocketApp">
 <head>
     <meta charset="UTF-8">
-    <title>Passport Authentication</title>
+    <title>Customize Your Rocket</title>
+    <!--STYLE LINKS-->
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/controller.min.js"></script>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
-    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body>
+  <body class="container" ng-controller="mainRocketController">
 
-    <p>hi</p>
+    <div class="row">
+        <div class="col-md-5">
+            <!-- main rocket -->
+            <div class="pointed-nosecone" ng-class="noseConeType"></div>
+            <div ng-class="bodyExtension"></div>
+            <div class="extended-fins" ng-class="finType"></div>
+        </div>
+
+        <div>
+            <!-- rocket info on click-->
+        </div>
+
+        <div>
+            <aside>
+                <!-- nose cones to be clicked on -->
+                <p>Nose Cones</p>
+                <div class="pointed-nosecone" ng-click="noseConeType = 'pointed-nosecone'"></div>
+                <div class="rounded-nosecone" ng-click="noseConeType = 'rounded-nosecone'"></div>
+                <div class="half-circle-nosecone" ng-click="noseConeType = 'half-circle-nosecone'"></div>
+
+                <!-- body extension -->
+                <div class="bodyTube-extension" ng-click="bodyExtension = 'bodyTube-extension'"></div>
+                <!-- fins to be clicked on -->
+                <p>Fins and Body Parts</p>
+                <div class="flat-fins" ng-click="finType = 'flat-fins'"></div>
+                <div class="extended-fins" ng-click="finType = 'extended-fins'"></div>
+                <div class="pointed-fins" ng-click="finType = 'pointed-fins'"></div>
+
+            </aside>
+        </div>
 
 
 
-</body>
+    </div>
+
+
+
+  </body>
 </html>

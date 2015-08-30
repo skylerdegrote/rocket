@@ -1,4 +1,55 @@
 body {
     background-color: skyblue;
-    /*background-image: url("/public/images/cloudysunsky.jpg");*/
+    background-image: url('/images/cloudysunsky.jpg');
+    background-size: cover;
 }
+
+p {
+    color: white;
+    font-size: 42px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+aside {
+    background-color:black;
+    height: auto;
+    width: 500px;
+    float: right;
+}
+
+.pointed-nosecone {
+    background: url("/images/pointed-nosecone.png") no-repeat;
+    height:150px;
+}
+
+.rounded-nosecone {
+    background:url("/images/rounded-nosecone.png") no-repeat;
+    height:150px;
+}
+
+.half-circle-nosecone {
+    background:url("/images/half-circle-nosecone.png") no-repeat;
+    height:150px;
+}
+
+.bodyTube-extension {
+    background:url("/images/body-extension.png") no-repeat;
+    height:250px;
+}
+
+.pointed-fins {
+    background:url("/images/pointed-fins.png") no-repeat;
+    height:750px;
+}
+
+.extended-fins {
+    background:url("/images/extended-fins.png") no-repeat;
+    height:750px;
+}
+
+.flat-fins {
+    background:url("/images/flat-fins.png") no-repeat;
+    height:750px;
+}
+
