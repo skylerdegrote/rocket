@@ -13,7 +13,7 @@ p {
 
 aside {
     background-color:black;
-    height: auto;
+    height: 1000px;
     width: 500px;
     float: right;
 }
@@ -58,6 +58,44 @@ aside {
     height:750px;
 }
 
-.none {
-    background:url("/images/rocketpieces_none.png") no-repeat;
+/* THUMBNAILS */
+/* nose cones */
+.pointed-nosecone-thumb {
+    background:url("/images/thumbnails/rocketthumb_pointed-nosecone-thumb.png") no-repeat;
+    height:150px;
+}
+
+.rounded-nosecone-thumb {
+    background:url("/images/thumbnails/rocketthumb_rounded-nosecone-thumb.png") no-repeat;
+    height:150px;
+}
+
+.half-circle-nosecone-thumb {
+    background:url("/images/thumbnails/rocketthumb_half-circle-nosecone-thumb.png") no-repeat;
+    height:150px;
+}
+/* body tubes */
+.bodyTube-extension-two-thumb {
+    background:url("/images/thumbnails/rocketthumb_2feet-body-extension-thumb.png") no-repeat;
+    height:100px;
+}
+
+.bodyTube-extension-four-thumb {
+    background:url("/images/thumbnails/rocketthumb_4feet-body-extension-thumb.png") no-repeat;
+    height:200px;
+}
+/* fins */
+.pointed-fins-thumb {
+    background:url("/images/thumbnails/rocketthumb_pointed-fins-thumb.png") no-repeat;
+    height:150px;
+}
+
+.extended-fins-thumb {
+    background:url("/images/thumbnails/rocketthumb_extended-fins-thumb.png") no-repeat;
+    height:150px;
+}
+.flat-fins-thumb {
+    background:url("/images/thumbnails/rocketpieces_flat-fins-thumb.png") no-repeat;
+    height:150px;
+    /*background-color: red;*/
 }
