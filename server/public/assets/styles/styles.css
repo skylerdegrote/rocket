@@ -19,37 +19,45 @@ aside {
 }
 
 .pointed-nosecone {
-    background: url("/images/pointed-nosecone.png") no-repeat;
+    background: url("/images/rocketpieces_pointed-nose.png") no-repeat;
     height:150px;
 }
 
 .rounded-nosecone {
-    background:url("/images/rounded-nosecone.png") no-repeat;
+    background:url("/images/rocketpieces_rounded-nose.png") no-repeat;
     height:150px;
 }
 
 .half-circle-nosecone {
-    background:url("/images/half-circle-nosecone.png") no-repeat;
+    background:url("/images/rocketpieces_half-circle-nose.png") no-repeat;
     height:150px;
 }
 
-.bodyTube-extension {
-    background:url("/images/body-extension.png") no-repeat;
+.bodyTube-extension-two {
+    background:url("/images/rocketpieces_2feet-body-extension.png") no-repeat;
     height:250px;
 }
 
+.bodyTube-extension-four {
+    background:url("/images/rocketpieces_4feet-body-extension.png") no-repeat;
+    height:450px;
+}
+
 .pointed-fins {
-    background:url("/images/pointed-fins.png") no-repeat;
+    background:url("/images/rocketpieces_pointed-fins.png") no-repeat;
     height:750px;
 }
 
 .extended-fins {
-    background:url("/images/extended-fins.png") no-repeat;
-    height:750px;
+    background:url("/images/rocketpieces_extend-fins.png") no-repeat;
+    height:755px;
 }
 
 .flat-fins {
-    background:url("/images/flat-fins.png") no-repeat;
+    background:url("/images/rocketpieces_flat-fins.png") no-repeat;
     height:750px;
 }
 
+.none {
+    background:url("/images/rocketpieces_none.png") no-repeat;
+}

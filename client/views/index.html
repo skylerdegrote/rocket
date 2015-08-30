@@ -14,7 +14,7 @@
   <body class="container" ng-controller="mainRocketController">
 
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6">
             <!-- main rocket -->
             <div class="pointed-nosecone" ng-class="noseConeType"></div>
             <div ng-class="bodyExtension"></div>
@@ -34,7 +34,9 @@
                 <div class="half-circle-nosecone" ng-click="noseConeType = 'half-circle-nosecone'"></div>
 
                 <!-- body extension -->
-                <div class="bodyTube-extension" ng-click="bodyExtension = 'bodyTube-extension'"></div>
+                <p>Extend the Body</p>
+                <div class="bodyTube-extension-two" ng-click="bodyExtension = 'bodyTube-extension-two'"></div>
+                <div class="bodyTube-extension-four" ng-click="bodyExtension = 'bodyTube-extension-four'"></div>
                 <!-- fins to be clicked on -->
                 <p>Fins and Body Parts</p>
                 <div class="flat-fins" ng-click="finType = 'flat-fins'"></div>
