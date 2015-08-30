@@ -26,36 +26,37 @@
         </div>
 
         <div class="col-md-6">
-                <aside>
-                    <!-- nose cones to be clicked on -->
-                    <div class="row">
-                        <p>Nose Cones</p>
-                        <div class="col-md-4 pointed-nosecone-thumb" ng-click="noseConeType = 'pointed-nosecone'"></div>
-                        <div class="col-md-4 rounded-nosecone-thumb" ng-click="noseConeType = 'rounded-nosecone'"></div>
-                        <div class="col-md-4 half-circle-nosecone-thumb" ng-click="noseConeType = 'half-circle-nosecone'"></div>
+            <aside>
+                <!-- nose cones to be clicked on -->
+                <div class="row">
+                    <p>Nose Cones</p>
+                    <div class="col-md-4 pointed-nosecone-thumb" ng-click="noseConeType = 'pointed-nosecone'"></div>
+                    <div class="col-md-4 rounded-nosecone-thumb" ng-click="noseConeType = 'rounded-nosecone'"></div>
+                    <div class="col-md-4 half-circle-nosecone-thumb" ng-click="noseConeType = 'half-circle-nosecone'"></div>
+                </div>
+                <div class="row">
+                    <!-- body extension -->
+                    <p>Extend the Body</p>
+                    <div class="col-md-4" ng-click="bodyExtension = ''">
+                        <h4>2 Foot Rocket</h4>
                     </div>
-                    <div class="row">
-                        <!-- body extension -->
-                        <p>Extend the Body</p>
-                        <div class="col-md-6 bodyTube-extension-two-thumb" ng-click="bodyExtension = 'bodyTube-extension-two'"></div>
-                        <div class="col-md-6 bodyTube-extension-four-thumb" ng-click="bodyExtension = 'bodyTube-extension-four'"></div>
+                    <div class="col-md-4" ng-click="bodyExtension = 'bodyTube-extension-two'">
+                        <h4>4 Foot Rocket</h4>
                     </div>
-                        <!-- fins to be clicked on -->
-                    <div class="row">
-                        <p>Fins and Body Parts</p>
-                        <div class="col-md-6 flat-fins-thumb" ng-click="finType = 'flat-fins'"></div>
-                        <div class="col-md-4 extended-fins-thumb" ng-click="finType = 'extended-fins'"></div>
-                        <div class="col-md-4 pointed-fins-thumb" ng-click="finType = 'pointed-fins'"></div>
+                    <div class="col-md-4" ng-click="bodyExtension = 'bodyTube-extension-four'">
+                        <h4>6 Foot Rocket</h4>
                     </div>
-                </aside>
 
+                </div>
+                    <!-- fins to be clicked on -->
+
+                    <p>Fins and Body Parts</p>
+                    <div class="flat-fins-thumb" ng-click="finType = 'flat-fins'"></div>
+                    <div class="extended-fins-thumb" ng-click="finType = 'extended-fins'"></div>
+                    <div class="pointed-fins-thumb" ng-click="finType = 'pointed-fins'"></div>
+
+            </aside>
         </div>
-
-
-
     </div>
-
-
-
   </body>
 </html>

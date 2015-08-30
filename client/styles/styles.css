@@ -1,6 +1,6 @@
 body {
     background-color: skyblue;
-    background-image: url('/images/cloudysunsky.jpg');
+    background: url('/images/cloudysunsky.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -12,10 +12,18 @@ p {
 }
 
 aside {
-    background-color:black;
-    height: 1000px;
-    width: 500px;
+    background-color:rgba(0, 0, 0, 0.3);
+    height: auto;
+    width: 400px;
     float: right;
+    padding: 30px;
+    margin:20px;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+    margin-left: 45px;
 }
 
 .pointed-nosecone {
@@ -74,28 +82,18 @@ aside {
     background:url("/images/thumbnails/rocketthumb_half-circle-nosecone-thumb.png") no-repeat;
     height:150px;
 }
-/* body tubes */
-.bodyTube-extension-two-thumb {
-    background:url("/images/thumbnails/rocketthumb_2feet-body-extension-thumb.png") no-repeat;
-    height:100px;
-}
 
-.bodyTube-extension-four-thumb {
-    background:url("/images/thumbnails/rocketthumb_4feet-body-extension-thumb.png") no-repeat;
-    height:200px;
-}
 /* fins */
 .pointed-fins-thumb {
     background:url("/images/thumbnails/rocketthumb_pointed-fins-thumb.png") no-repeat;
-    height:150px;
+    height:350px;
 }
 
 .extended-fins-thumb {
     background:url("/images/thumbnails/rocketthumb_extended-fins-thumb.png") no-repeat;
-    height:150px;
+    height:350px;
 }
 .flat-fins-thumb {
-    background:url("/images/thumbnails/rocketpieces_flat-fins-thumb.png") no-repeat;
-    height:150px;
-    /*background-color: red;*/
+    background:url("/images/thumbnails/rocketthumb_flat-fins-thumb.png") no-repeat;
+    height:350px;
 }
