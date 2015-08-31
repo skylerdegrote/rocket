@@ -34,22 +34,22 @@ app.controller("mainRocketController", ["$scope", function($scope) {
         types: "Pointed, Rounded and Half Circle",
         techNames: "Cone, Parabola and Hemisphere",
         pointed: {
-            technicalName: "cone nose cone",
+            technicalName: "cone",
             numberNeeded: "one",
             information: "The Cone Nose Cone specifically has the benefit of being the easiest to eject the parachute from.",
-            image: "path to image"
+            image:  "/images/thumbnails/rocketthumb_pointed-nosecone-thumb.png"
         },
         rounded: {
-            technicalName:"parabola nose cone",
+            technicalName:"parabola",
             numberNeeded: "one",
             information: "The Parabola Nose Cone has the ability to pass through a windy day with ease",
-            image: "path to image"
+            image:  "/images/thumbnails/rocketthumb_rounded-nosecone-thumb.png"
         },
         halfCircle: {
-            technicalName:"hemisphere nose cone",
+            technicalName:"hemisphere",
             numberNeeded: "one",
-            information: "The Hemisphere Nose Cone will more than likely launch the fastest and therefore CAN launch the highest depending on the engine size",
-            image: "path to image"
+            information: "hemisphere nose cone will more than likely launch the fastest and therefore CAN launch the highest depending on the engine size",
+            image: "/images/thumbnails/rocketthumb_half-circle-nosecone-thumb.png"
         }
     };
 
@@ -61,16 +61,21 @@ app.controller("mainRocketController", ["$scope", function($scope) {
         normal: {
             technicalName: "Pointed Swept Fins",
             numberNeeded: "three or four",
-            information: "are used to ..."
+            information: "are used to ...",
+            image: "/images/thumbnails/rocketthumb_pointed-fins-thumb.png"
         },
         extended: {
             technicalName:"Clipped Delta Fins",
             numberNeeded: "three or four",
-            information: "are used to..."},
+            information: "are used to...",
+            image: "/images/thumbnails/rocketthumb_extended-fins-thumb.png"
+        },
         flat: {
             technicalName: "Medium Swept Trap Fins",
             numberNeeded: "three or four",
-            information: "are used to..."}
+            information: "are used to...",
+            image: "/images/thumbnails/rocketthumb_flat-fins-thumb.png"
+        }
     };
 
 

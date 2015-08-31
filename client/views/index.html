@@ -28,6 +28,7 @@
             <br><p>The {{nosecones.pointed.information}}</p>
             <br><p>The {{nosecones.rounded.information}}</p>
             <br><p>The {{nosecones.halfCircle.information}}</p>
+
         </div>
         <div class="blackback" ng-show="isFinsVisible">
             <h3>{{fins.types}}</h3>
@@ -43,24 +44,14 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
     <div class="col-md-offset-4">
         <aside>
             <!-- nose cones to be clicked on -->
             <div class="row">
                 <h2>Nose Cones</h2>
-                <div class="col-md-4 pointed-nosecone-thumb" ng-click="noseConeType = 'pointed-nosecone'"></div>
-                <div class="col-md-4 rounded-nosecone-thumb" ng-click="noseConeType = 'rounded-nosecone'"></div>
-                <div class="col-md-4 half-circle-nosecone-thumb" ng-click="noseConeType = 'half-circle-nosecone'"></div>
+                <img src="{{nosecones.pointed.image}}" class="col-md-4" ng-click="noseConeType = 'pointed-nosecone'">
+                <img src="{{nosecones.rounded.image}}" class="col-md-4" ng-click="noseConeType = 'rounded-nosecone'">
+                <img src="{{nosecones.halfCircle.image}}" class="col-md-4" ng-click="noseConeType = 'half-circle-nosecone'">
             </div>
             <div class="row">
                 <!-- body extension -->
@@ -80,9 +71,9 @@
             <!-- fins to be clicked on -->
 
             <h2>Fins and Body Parts</h2>
-            <div class="flat-fins-thumb" ng-click="finType = 'flat-fins'"></div>
-            <div class="extended-fins-thumb" ng-click="finType = 'extended-fins'"></div>
-            <div class="pointed-fins-thumb" ng-click="finType = 'pointed-fins'"></div>
+            <img src="{{fins.flat.image}}" ng-click="finType = 'flat-fins'">
+            <img src="{{fins.extended.image}}" ng-click="finType = 'extended-fins'">
+            <img src="{{fins.normal.image}}" ng-click="finType = 'pointed-fins'">
 
         </aside>
     </div>
