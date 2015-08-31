@@ -16,7 +16,7 @@
         <!-- main rocket -->
         <div class="pointed-nosecone" ng-class="noseConeType" ng-click="showNoseConeInfo()"></div>
 
-        <div ng-class="bodyExtension"></div>
+        <div ng-class="bodyExtension" ng-click="showBodyExtensionInfo()"></div>
         <div class="extended-fins" ng-class="finType" ng-click="showFinsInfo()"></div>
     </div>
 
@@ -35,6 +35,10 @@
             <br><p>The {{fins.normal.information}}</p>
             <br><p>The {{fins.flat.information}}</p>
             <br><p>The {{fins.extended.information}}</p>
+        </div>
+        <div class="blackback" ng-show="isBodyExtensionVisible">
+            <h3>{{bodyExtension.types}}</h3>
+            <br><p>The {{bodyExtension.information}}test</p>
         </div>
     </div>
 
