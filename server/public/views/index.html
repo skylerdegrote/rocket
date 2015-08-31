@@ -13,18 +13,10 @@
 <h1>Up in the Sky, Rockets will Fly!</h1>
 <div class="row">
     <div class="col-md-4">
-        <!-- main rocket -->
-        <div class="pointed-nosecone" ng-class="noseConeType" ng-click="showNoseConeInfo()"></div>
-
-        <div ng-class="bodyExtension" ng-click="showBodyExtensionInfo()"></div>
-        <div class="extended-fins" ng-class="finType" ng-click="showFinsInfo()"></div>
-    </div>
-
-    <div class="col-md-4">
         <!-- rocket info on click-->
         <div class="blackback" ng-show="isNoseConeVisible">
             <h3>{{nosecones.types}}</h3>
-            <h5>Otherwise known as: {{nosecones.techNames}}</h5>
+            <h5>- {{nosecones.techNames}} -</h5><hr>
             <br><p>The {{nosecones.pointed.information}}</p>
             <br><p>The {{nosecones.rounded.information}}</p>
             <br><p>The {{nosecones.halfCircle.information}}</p>
@@ -32,7 +24,7 @@
         </div>
         <div class="blackback" ng-show="isFinsVisible">
             <h3>{{fins.types}}</h3>
-            <h5>Otherwise known as: {{fins.techNames}}</h5>
+            <h5>- {{fins.techNames}} -</h5><h4></h4>
             <br><p>The {{fins.normal.information}}</p>
             <br><p>The {{fins.flat.information}}</p>
             <br><p>The {{fins.extended.information}}</p>
@@ -43,8 +35,15 @@
         </div>
     </div>
 
+    <div class="col-md-5">
+        <!-- main rocket -->
+        <div class="pointed-nosecone" ng-class="noseConeType" ng-click="showNoseConeInfo()"></div>
 
-    <div class="col-md-offset-4">
+        <div ng-class="bodyExtension" ng-click="showBodyExtensionInfo()"></div>
+        <div class="extended-fins" ng-class="finType" ng-click="showFinsInfo()"></div>
+    </div>
+
+    <div class="col-md-3">
         <aside>
             <!-- nose cones to be clicked on -->
             <div class="row">

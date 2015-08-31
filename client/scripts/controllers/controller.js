@@ -32,7 +32,7 @@ app.controller("mainRocketController", ["$scope", function($scope) {
 
     $scope.nosecones = {
         types: "Pointed, Rounded and Half Circle",
-        techNames: "Cone, Parabola and Hemisphere",
+        techNames: "Cone, Parabola & Hemisphere",
         pointed: {
             technicalName: "cone",
             numberNeeded: "one",
@@ -56,7 +56,7 @@ app.controller("mainRocketController", ["$scope", function($scope) {
 
     $scope.fins = {
         types: "Normal, Extended and Flat",
-        techNames: "Pointed Swept, Clipped Delta and Medium Swept Trap",
+        techNames: "Pointed Swept, Clipped Delta & Medium Swept Trap",
         finInfo: "Fins, in general, are used to...and you must have at least three and up to four of them.",
         normal: {
             technicalName: "Pointed Swept Fins",
