@@ -5,9 +5,9 @@ var app = angular.module("rocketApp", []);
 
 
 app.controller("mainRocketController", ["$scope", function($scope) {
-        //$scope.noseconeinfo = infoboxservice.modal;
-        $scope.noseconeinfo = function(){
-                return ("hello");
+    //$scope.noseconeinfo = infoboxservice.modal;
+    $scope.noseconeinfo = function(){
+        return ("hello");
     }
 }]);
 
