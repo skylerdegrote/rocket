@@ -22,7 +22,7 @@ app.controller("mainRocketController", ["$scope", function($scope) {
         $scope.isNoseConeVisible = false;
         $scope.isFinsVisible = true;
     };
-//FINS INFO FUNCTION
+//BODY EXTENSION INFO FUNCTION
     $scope.isBodyExtensionVisible = false;
     $scope.showBodyExtensionInfo = function () {
         $scope.isNoseConeVisible = false;
@@ -71,6 +71,23 @@ app.controller("mainRocketController", ["$scope", function($scope) {
             technicalName: "Medium Swept Trap Fins",
             numberNeeded: "three or four",
             information: "are used to..."}
+    };
+
+
+    $scope.bodyExtension = {
+        types: "None, 2 foot, and 4 foot",
+        bodyInfo: "If you were to buy a kit, you may get a set that includes a fin body piece that is already connected. In this case, you may just need a body extension to make your rocket as tall as you would like it to be.",
+        none: {
+            information: "No body extension means no additional height to the rocket in the kit."
+        },
+        two: {
+            size:"two feet added to your rocket will usually make a rocket four feet tall. The body fin kits usually start at 2 feet tall originally",
+            numberNeeded: "one",
+            information: "are used to add two feet to the height of your rocket"},
+        four: {
+            size:"four feet added to your rocket will usually make a rocket six feet tall. The body fin kits usually start at 2 feet tall originally",
+            numberNeeded: "one",
+            information: "are used to add four feet to the height of your rocket"}
     };
 
 }]);
