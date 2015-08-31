@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="rocketApp">
+<html lang="en" ng-app="RocketApp">
 <head>
     <meta charset="UTF-8">
     <title>Customize Your Rocket</title>
     <!--STYLE LINKS-->
     <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/styles/styles.css">
-    <!--SCRIPTS-->
-    <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
-    <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
-    <script type="text/javascript" src="/assets/scripts/controller.min.js"></script>
+
 </head>
-<body class="container-fluid" ng-controller="mainRocketController">
+<body class="container-fluid">
+<div  ng-controller="mainRocketController">
 <h1>Up in the Sky, Rockets will Fly!</h1>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
         <!-- main rocket -->
-        <div class="pointed-nosecone" ng-class="noseConeType" ng-click="noseConeInfo"></div>
+        <div class="pointed-nosecone" ng-class="noseConeType" ng-click="showNoseConeInfo()"></div>
+
         <div ng-class="bodyExtension"></div>
         <div class="extended-fins" ng-class="finType"></div>
     </div>
 
-    <div>
+    <div class="col-md-4">
         <!-- rocket info on click-->
-        <div ng-class="info"></div>
+        <div class="blackback" ng-show="isNoseConeVisible">
+            <h3>{{nosecones.types}}</h3>
+            <h5>Otherwise known as: {{nosecones.techNames}}</h5>
+            <br><p>The {{nosecones.pointed.information}}</p>
+            <br><p>The {{nosecones.rounded.information}}</p>
+            <br><p>The {{nosecones.halfCircle.information}}</p>
+        </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-offset-4">
         <aside>
             <!-- nose cones to be clicked on -->
             <div class="row">
@@ -60,6 +65,15 @@
         </aside>
     </div>
 </div>
-<div><h2>{{rockets.noseCones.rounded-nosecone.id}}</h2></div>
+
+
+
+</div>
+
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/controller.min.js"></script>
 </body>
 </html>
