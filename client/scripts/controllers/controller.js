@@ -12,8 +12,10 @@ app.controller("mainRocketController", ["$scope", function($scope) {
 }]);
 
 
-
-
+//app.factory("noseInfoService", function(){
+//
+//});
+//
 
 
 

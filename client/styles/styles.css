@@ -6,8 +6,7 @@ body {
 
 p {
     color: white;
-    font-size: 42px;
-    text-decoration: underline;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -16,14 +15,24 @@ aside {
     height: auto;
     width: 400px;
     float: right;
-    padding: 30px;
     margin:20px;
+    padding:40px;
 }
 
-h4 {
-    font-size: 20px;
+h1 {
+    color: #010101;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+    text-decoration: underline;
     color: white;
-    margin-left: 45px;
+    text-align: center;
+}
+h4 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
 }
 
 .pointed-nosecone {
@@ -86,14 +95,14 @@ h4 {
 /* fins */
 .pointed-fins-thumb {
     background:url("/images/thumbnails/rocketthumb_pointed-fins-thumb.png") no-repeat;
-    height:350px;
+    height:200px;
 }
 
 .extended-fins-thumb {
     background:url("/images/thumbnails/rocketthumb_extended-fins-thumb.png") no-repeat;
-    height:350px;
+    height:200px;
 }
 .flat-fins-thumb {
     background:url("/images/thumbnails/rocketthumb_flat-fins-thumb.png") no-repeat;
-    height:350px;
+    height:200px;
 }

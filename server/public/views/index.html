@@ -11,33 +11,35 @@
     <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/controller.min.js"></script>
 </head>
-  <body class="container" ng-controller="mainRocketController">
-
+  <body class="container-fluid" ng-controller="mainRocketController">
+    <h1>Up in the Sky, Rockets will Fly!</h1>
     <div class="row">
         <div class="col-md-6">
             <!-- main rocket -->
-            <div class="pointed-nosecone" ng-class="noseConeType" ng-click="noseconeinfo()"></div>
+            <div class="pointed-nosecone" ng-class="noseConeType" ng-click="noseConeInfo"></div>
             <div ng-class="bodyExtension"></div>
             <div class="extended-fins" ng-class="finType"></div>
         </div>
 
         <div>
             <!-- rocket info on click-->
+            <div ng-class="info"></div>
         </div>
 
         <div class="col-md-6">
             <aside>
                 <!-- nose cones to be clicked on -->
                 <div class="row">
-                    <p>Nose Cones</p>
+                    <h2>Nose Cones</h2>
                     <div class="col-md-4 pointed-nosecone-thumb" ng-click="noseConeType = 'pointed-nosecone'"></div>
                     <div class="col-md-4 rounded-nosecone-thumb" ng-click="noseConeType = 'rounded-nosecone'"></div>
                     <div class="col-md-4 half-circle-nosecone-thumb" ng-click="noseConeType = 'half-circle-nosecone'"></div>
                 </div>
                 <div class="row">
                     <!-- body extension -->
-                    <p>Extend the Body</p>
-                    <div class="col-md-4" ng-click="bodyExtension = ''">
+                    <h2>Extend the Body</h2>
+
+                    <div class="col-md-4" ng-click="bodyExtension = ''"> <!-- empty class by design -->
                         <h4>2 Foot Rocket</h4>
                     </div>
                     <div class="col-md-4" ng-click="bodyExtension = 'bodyTube-extension-two'">
@@ -50,7 +52,7 @@
                 </div>
                     <!-- fins to be clicked on -->
 
-                    <p>Fins and Body Parts</p>
+                    <h2>Fins and Body Parts</h2>
                     <div class="flat-fins-thumb" ng-click="finType = 'flat-fins'"></div>
                     <div class="extended-fins-thumb" ng-click="finType = 'extended-fins'"></div>
                     <div class="pointed-fins-thumb" ng-click="finType = 'pointed-fins'"></div>
