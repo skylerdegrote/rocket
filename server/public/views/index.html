@@ -17,23 +17,57 @@
         <div class="blackback" ng-show="isNoseConeVisible">
             <h3>{{nosecones.types}}</h3>
             <h5>- {{nosecones.techNames}} -</h5><hr>
-            <br><p>The {{nosecones.pointed.information}}</p>
-            <br><p>The {{nosecones.rounded.information}}</p>
-            <br><p>The {{nosecones.halfCircle.information}}</p>
+            <h3>{{nosecones.pointed.technicalName}}</h3>
+            <p>The {{nosecones.pointed.technicalName}}{{nosecones.pointed.information}}</p>
+            <h3>{{nosecones.rounded.technicalName}}</h3>
+            <p>The {{nosecones.rounded.technicalName}}{{nosecones.rounded.information}}</p>
+            <h3>{{nosecones.halfCircle.technicalName}}</h3>
+            <p>The {{nosecones.halfCircle.technicalName}}{{nosecones.halfCircle.information}}</p>
 
         </div>
         <div class="blackback" ng-show="isFinsVisible">
             <h3>{{fins.types}}</h3>
-            <h5>- {{fins.techNames}} -</h5><h4></h4>
-            <br><p>The {{fins.normal.information}}</p>
-            <br><p>The {{fins.flat.information}}</p>
-            <br><p>The {{fins.extended.information}}</p>
+            <h5>- {{fins.techNames}} -</h5><hr>
+            <p>{{fins.finInfo}}</p><hr>
+            <h3>{{fins.normal.technicalName}}</h3>
+            <p>The {{fins.normal.technicalName}} {{fins.normal.information}}</p>
+            <h3>{{fins.flat.technicalName}}</h3>
+            <p>The {{fins.flat.technicalName}}{{fins.flat.information}}</p>
+            <h3>{{fins.extended.technicalName}}</h3>
+            <p>The {{fins.extended.technicalName}}{{fins.extended.information}}</p>
         </div>
+
+
         <div class="blackback" ng-show="isBodyExtensionVisible">
-            <h3>{{bodyExtension.types}}</h3>
-            <br><p>The {{bodyExtension.information}}test</p>
+
+            <h3>{{bodyextension.types}}</h3>
+            <h5>- {{bodyextension.bodyInfo}} -</h5><hr>
+            <h3>{{bodyextension.none.title}}</h3>
+            <p>{{bodyextension.none.information}}</p>
+            <h3>{{bodyextension.two.title}}</h3>
+            <p>{{bodyextension.two.information}}</p>
+            <h3>{{bodyextension.four.title}}</h3>
+            <p>{{bodyextension.four.information}}</p>
+
+
+
+
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="col-md-5">
         <!-- main rocket -->
