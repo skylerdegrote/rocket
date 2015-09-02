@@ -2,18 +2,20 @@
 //controllers can have $scope and factories CAN NOT
 
 
-
+var app = angular.module("RocketApp", []);
 
 app.controller("mainRocketController", ["$scope", function($scope) {
-
-
-
 //NOSE CONE INFO FUNCTION
     $scope.isNoseConeVisible = false;
     $scope.showNoseConeInfo = function () {
         $scope.isFinsVisible = false;
         $scope.isBodyExtensionVisible = false;
         $scope.isNoseConeVisible = true;
+        $scope.isNoseConeColored = true;
+    };
+    $scope.isNoseConeColored = false;
+    $scope.showNoseConeColor = function(){
+        $scope.isNoseConeColored = true;
     };
 //FINS INFO FUNCTION
     $scope.isFinsVisible = false;
@@ -29,7 +31,6 @@ app.controller("mainRocketController", ["$scope", function($scope) {
         $scope.isFinsVisible = false;
         $scope.isBodyExtensionVisible = true;
     };
-
     $scope.nosecones = {
         types: "Pointed, Rounded & Half Circle",
         techNames: "Cone, Parabola & Hemisphere",
@@ -52,8 +53,6 @@ app.controller("mainRocketController", ["$scope", function($scope) {
             image: "/images/thumbnails/rocketthumb_half-circle-nosecone-thumb.png"
         }
     };
-
-
     $scope.fins = {
         types: "Normal, Extended & Flat",
         techNames: "Pointed Swept, Clipped Delta & Medium Swept Trap",
@@ -93,42 +92,43 @@ app.controller("mainRocketController", ["$scope", function($scope) {
             information: "An Additional four feet to the rocket will often give you a six foot rocket. You'll need a connector piece to connect the fin assembly to the body extension."
         }
         };
-
 }]);
 
 
 
 
 
+//controller here
+app.controller("userController", ["$scope", '$http', function($scope, $http) {
+    $http.get('/user/name')
+        .then(function(response){
+            if(response.status !==200){
+                throw new Error("call failed")
+            }
+        })
+}]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//$(document).ready(function(){
+//    $.ajax({
+//        type: "GET",
+//        url: "/user/name",
+//        success: function(data){
+//            console.log(data);
+//            $("#welcome").text("Welcome, " + data.firstname);
+//            $("#lastLogin").text("Last Login Time: " + data.lastlogin);
+//            updateDate();
+//        }
+//    });
+//
+//
+//});
+//
+//function updateDate(){
+//    $.ajax({
+//        type: "PUT",
+//        url: "/user/date",
+//        success: function(data){
+//            console.log(data);
+//        }
+//    })
+//}

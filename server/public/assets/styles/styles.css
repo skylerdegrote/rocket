@@ -86,38 +86,6 @@ h5 {
     height:750px;
 }
 
-/*/!* THUMBNAILS *!/*/
-/*/!* nose cones *!/*/
-/*.pointed-nosecone-thumb {*/
-    /*background:url("/images/thumbnails/rocketthumb_pointed-nosecone-thumb.png") no-repeat;*/
-    /*height:150px;*/
-/*}*/
-
-/*.rounded-nosecone-thumb {*/
-    /*background:url("/images/thumbnails/rocketthumb_rounded-nosecone-thumb.png") no-repeat;*/
-    /*height:150px;*/
-/*}*/
-
-/*.half-circle-nosecone-thumb {*/
-    /*background:url("/images/thumbnails/rocketthumb_half-circle-nosecone-thumb.png") no-repeat;*/
-    /*height:150px;*/
-/*}*/
-
-/*/!* fins *!/*/
-/*.pointed-fins-thumb {*/
-    /*background:url("/images/thumbnails/rocketthumb_pointed-fins-thumb.png") no-repeat;*/
-    /*height:200px;*/
-/*}*/
-
-/*.extended-fins-thumb {*/
-    /*background:url("/images/thumbnails/rocketthumb_extended-fins-thumb.png") no-repeat;*/
-    /*height:200px;*/
-/*}*/
-/*.flat-fins-thumb {*/
-    /*background:url("/images/thumbnails/rocketthumb_flat-fins-thumb.png") no-repeat;*/
-    /*height:200px;*/
-/*}*/
-
 
 .blackback {
     background-color: rgba(0,0,0, .5);
@@ -125,5 +93,35 @@ h5 {
     margin-top:20px;
 }
 
+/* color boxes */
 
+.blue, .green, .red, .pink, .purple, .yellow {
+    border: 5px solid black;
+    width: 65px;
+    height: 25px;
+}
+
+.blue {
+    background-color: #003366;
+}
+
+.green {
+    background-color: #009926;
+}
+
+.red {
+    background-color: #880000;
+}
+
+.pink {
+    background-color: #f341c2;
+}
+
+.purple {
+    background-color: #984bd2;
+}
+
+.yellow {
+    background-color: #f5db0a;
+}
 

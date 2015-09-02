@@ -1,8 +1,3 @@
-/**
- * Created by Skyler DeGrote on 8/19/15.
- */
-
-
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
@@ -16,12 +11,11 @@ router.get('/', function(req, res, next){
 router.post('/', function(req,res,next) {
     Users.create(req.body, function (err, post) {
         if (err)
-            next("That user already exists");
+            next("That user already exists!");
         else
-            res.redirect('/views/users.html');
+            res.redirect('/views/login.html');
     })
 });
-
 module.exports = router;
 
 

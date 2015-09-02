@@ -21,9 +21,10 @@ module.exports = function(grunt){
                 src: [
                     'index.html',
                     'users.html',
-                    'register.html'
+                    'register.html',
+                    'login.html'
                 ],
-                "dest": "server/public/views/"
+                dest: "server/public/views/"
             },
             style: {
                 expand:true,
@@ -39,7 +40,7 @@ module.exports = function(grunt){
                 src: [
                     "bootstrap/dist/css/bootstrap.min.css"
                 ],
-                "dest": "server/public/vendors/"
+                dest: "server/public/vendors/"
             },
             angular: {
                 expand: true,
@@ -48,7 +49,7 @@ module.exports = function(grunt){
                     "angular/angular.min.js",
                     "angular/angular.min.map.js"
                 ],
-                "dest": "server/public/vendors/"
+                dest: "server/public/vendors/"
             },
             jquery: {
                 expand: true,
@@ -57,7 +58,7 @@ module.exports = function(grunt){
                     "jquery/dist/jquery.min.js",
                     "jquery/dist/jquery.min.map"
                 ],
-                "dest": "server/public/vendors/"
+                dest: "server/public/vendors/"
             }
         }
     });

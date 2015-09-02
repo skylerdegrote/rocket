@@ -1,9 +1,5 @@
 //server side
 
-/**
- * Created by Skyler DeGrote on 8/19/15.
- */
-
 var express = require("express");
 var path = require("path");
 var index = require("./routes/index.js");
@@ -17,7 +13,6 @@ var register = require('./routes/register');
 var bodyParser = require('body-parser');
 var mongoURI = 'mongodb://localhost:27017/rocket-application';
 var mongoDB = mongoose.connect(mongoURI).connection;
-
 
 //Setting up Mongo communication
 mongoDB.on('error', function(err){

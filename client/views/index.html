@@ -12,8 +12,8 @@
 <div  ng-controller="mainRocketController">
 <h1>Up in the Sky, Rockets will Fly!</h1>
 <div class="row">
+<!-- rocket info on click-->
     <div class="col-md-4">
-        <!-- rocket info on click-->
         <div class="blackback" ng-show="isNoseConeVisible">
             <h3>{{nosecones.types}}</h3>
             <h5>- {{nosecones.techNames}} -</h5><hr>
@@ -39,7 +39,6 @@
 
 
         <div class="blackback" ng-show="isBodyExtensionVisible">
-
             <h3>{{bodyextension.types}}</h3>
             <h5>- {{bodyextension.bodyInfo}} -</h5><hr>
             <h3>{{bodyextension.none.title}}</h3>
@@ -48,48 +47,29 @@
             <p>{{bodyextension.two.information}}</p>
             <h3>{{bodyextension.four.title}}</h3>
             <p>{{bodyextension.four.information}}</p>
-
-
-
-
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- main rocket -->
     <div class="col-md-5">
-        <!-- main rocket -->
-        <div class="pointed-nosecone" ng-class="noseConeType" ng-click="showNoseConeInfo()"></div>
-
-        <div ng-class="bodyExtension" ng-click="showBodyExtensionInfo()"></div>
+        <div class="pointed-nosecone" ng-class= "noseConeType" ng-click="showNoseConeInfo()"></div>
+        <div class="bodyExtension" ng-class="bodyExtension" ng-click="showBodyExtensionInfo()"></div>
         <div class="extended-fins" ng-class="finType" ng-click="showFinsInfo()"></div>
-    </div>
 
+    </div>
+    <!-- side stuff to be clicked on -->
     <div class="col-md-3">
         <aside>
-            <!-- nose cones to be clicked on -->
             <div class="row">
+                <!-- nose cones -->
                 <h2>Nose Cones</h2>
                 <img src="{{nosecones.pointed.image}}" class="col-md-4" ng-click="noseConeType = 'pointed-nosecone'">
                 <img src="{{nosecones.rounded.image}}" class="col-md-4" ng-click="noseConeType = 'rounded-nosecone'">
                 <img src="{{nosecones.halfCircle.image}}" class="col-md-4" ng-click="noseConeType = 'half-circle-nosecone'">
             </div>
+
             <div class="row">
                 <!-- body extension -->
                 <h2>Extend the Body</h2>
-
                 <div class="col-md-4" ng-click="bodyExtension = ''"> <!-- empty class by design -->
                     <h4>2 Foot Rocket</h4>
                 </div>
@@ -100,14 +80,15 @@
                     <h4>6 Foot Rocket</h4>
                 </div>
 
+
             </div>
-            <!-- fins to be clicked on -->
-
-            <h2>Fins and Body Parts</h2>
-            <img src="{{fins.flat.image}}" ng-click="finType = 'flat-fins'">
-            <img src="{{fins.extended.image}}" ng-click="finType = 'extended-fins'">
-            <img src="{{fins.normal.image}}" ng-click="finType = 'pointed-fins'">
-
+            <div>
+                <!-- fins to be clicked on -->
+                <h2>Fins and Body Parts</h2>
+                <img src="{{fins.flat.image}}" ng-click="finType = 'flat-fins'">
+                <img src="{{fins.extended.image}}" ng-click="finType = 'extended-fins'">
+                <img src="{{fins.normal.image}}" ng-click="finType = 'pointed-fins'">
+            </div>
         </aside>
     </div>
 </div>
@@ -115,8 +96,6 @@
 
 
 </div>
-
-
 <!--SCRIPTS-->
 <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
 <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
