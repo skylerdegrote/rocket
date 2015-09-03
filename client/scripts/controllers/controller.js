@@ -100,13 +100,23 @@ app.controller("mainRocketController", ["$scope", function($scope) {
 
 //controller here
 app.controller("userController", ["$scope", '$http', function($scope, $http) {
-    $http.get('/user/name')
-        .then(function(response){
-            if(response.status !==200){
-                throw new Error("call failed")
-            }
+    $scope.getName = function(){
+        console.log('here');
+        $http.get('/name')
+            .then(function(response){
+                if(response.status !==200){
+                    throw new Error("call failed")
+                }
+                $scope.username = response.data.username;
+                $scope.firstname = response.data.firstName;
+                $scope.lastname = response.data.lastName;
+                console.log(response);
         })
+    }
+    $scope.getName();
 }]);
+
+
 
 //$(document).ready(function(){
 //    $.ajax({

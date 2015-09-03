@@ -11,6 +11,11 @@ router.post('/', passport.authenticate('local', {
     failureRedirect: '/'
 }));
 
+router.get('/name', function(req, res, next){
+    res.json(req.user);
+
+});
+
 router.get("/*", function(req, res, next){
     var file = req.params[0] || "views/login.html";
     res.sendFile(path.join(__dirname, "../public", file));

@@ -6,11 +6,15 @@
     <!--STYLE LINKS-->
     <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/styles/styles.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="container-fluid">
+<div ng-controller="userController">
+    <h2>Hello {{firstname}}</h2>
+</div>
 <div  ng-controller="mainRocketController">
 <h1>Up in the Sky, Rockets will Fly!</h1>
+
 <div class="row">
 <!-- rocket info on click-->
     <div class="col-md-4">

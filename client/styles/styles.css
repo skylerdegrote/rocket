@@ -46,6 +46,36 @@ h5 {
 
 }
 
+.register {
+    background-color: rgba(0,0,0,.5);
+    height: auto;
+    width: 600px;
+    margin: auto;
+}
+
+.register h1 {
+    color: #fdfdfd;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: HelveticaNeue-Light;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pointed-nosecone {
     background: url("/images/rocketpieces_pointed-nose.png") no-repeat;
     height:150px;
