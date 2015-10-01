@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({expanded:true}));
 
 //setting the port
-app.set("port", (process.env.PORT || 5000));
+app.set("port", (process.env.PORT || 3000));
 
 //passport
 app.use(session({

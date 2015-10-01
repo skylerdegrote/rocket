@@ -112,7 +112,7 @@ app.controller("userController", ["$scope", '$http', function($scope, $http) {
                 $scope.lastname = response.data.lastName;
                 console.log(response);
         })
-    }
+    };
     $scope.getName();
 }]);
 
@@ -142,3 +142,8 @@ app.controller("userController", ["$scope", '$http', function($scope, $http) {
 //        }
 //    })
 //}
+
+function printFunction(){
+    console.log("clicked the print function");
+    window.print();
+}
