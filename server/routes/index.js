@@ -17,7 +17,7 @@ router.get('/name', function(req, res, next){
 });
 
 router.get("/*", function(req, res, next){
-    var file = req.params[0] || "views/login.html";
+    var file = req.params[0] || "views/index.html";
     res.sendFile(path.join(__dirname, "../public", file));
 });
 
